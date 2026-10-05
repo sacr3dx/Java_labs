@@ -1,0 +1,23 @@
+# Формат: тип;сорт;цена;вес(кг);качество(0-100);доп.поля...
+# grain:           сорт;цена;вес;качество;степень_обжарки;материал_пакета
+# ground:          сорт;цена;вес;качество;помол
+# instant_jar:     сорт;цена;вес;качество;объём_банки(л);материал_банки
+# instant_sachet:  сорт;цена;вес;качество;число_пакетиков;объём_обёртки(л)
+
+grain;Arabica Brazil;850;1.0;88;MEDIUM;FOIL
+grain;Robusta Vietnam;420;1.0;65;DARK;PAPER
+grain;Arabica Colombia;900;0.5;91;ULTRA_DARK;FOIL
+ground;Espresso Classic;650;0.25;82;FINE
+ground;House Blend;380;0.5;60;VERY_FINE
+ground;;300;0.25;150;MEDIUM
+instant_jar;Gold Original;1100;0.19;75;0.3;GLASS
+instant_jar;Freeze Dried;1500;0.1;93;-0.2;TITANIUM
+instant_jar;Classic Instant;700;0.1;abc;0.25;PLASTIC
+instant_sachet;Breakfast Blend;15;0.018;58;20;0.005
+instant_sachet;Cappuccino Mix;18;0.02;70;0;0.005
+instant_sachet;Latte Mix;abc;0.02;64;20;0.005
+
+# структурно некорректные строки ниже должны быть полностью проигнорированы
+instant_sachet;Too Few Fields;10
+unknown_type;Mystery Coffee;500;1.0;80;X;Y
+;No Type At All;500;1.0;80
